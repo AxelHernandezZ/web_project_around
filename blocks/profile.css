@@ -1,0 +1,109 @@
+.profile {
+  height: 120px;
+  width: 880px;
+  margin: 0 auto 50px auto;
+
+  display: flex;
+}
+
+.profile__avatar {
+  height: 120px;
+  width: 120px;
+
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.profile__avatar-image {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.profile__info {
+  height: 77px;
+  width: 415px;
+  margin: auto 0 auto 30px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+
+  grid-template-areas:
+    "name name button"
+    "explorador explorador .";
+}
+
+.profile__info-name {
+  grid-area: name;
+  margin: 0 0 16px 0;
+}
+
+.profile__info-name-text {
+  margin: 0;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 42px;
+
+  line-height: 48px;
+  letter-spacing: 0%;
+}
+
+.profile__info-editbutton {
+  grid-area: button;
+
+  height: 24px;
+  width: 24px;
+
+  border-radius: 2px;
+  border-color: #ffffff;
+  border-width: 2px;
+
+  border: 2px solid #ffffff;
+}
+
+.profile__info-editbutton-edit {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.profile__info-editbutton-image {
+  height: 100%;
+  width: 100%;
+}
+
+.profile__info-explorador {
+  grid-area: explorador;
+  height: 22px;
+  width: 415px;
+}
+
+.profile__info-explorador-text {
+  margin: 0;
+  color: #ffffff;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.profile__info-addbutton {
+  height: 50px;
+  width: 150px;
+
+  margin: 35px 0 0 165px;
+
+  border: 2px solid #ffffff;
+}
+
+.profile__info-addbutton-add {
+  height: 100%;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}

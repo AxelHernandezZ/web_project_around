@@ -1,0 +1,14 @@
+.header {
+}
+
+.header__content {
+  height: 74px;
+  width: 880px;
+
+  margin: 45px auto 40px auto;
+}
+
+.logo {
+  height: 33px;
+  width: 173px;
+}
