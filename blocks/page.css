@@ -10,3 +10,7 @@
   margin: 0;
   background-color: #000000;
 }
+
+.page__main {
+  width: 100%;
+}
