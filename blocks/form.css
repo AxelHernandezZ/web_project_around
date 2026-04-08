@@ -51,6 +51,18 @@
     font-size: 40px;
   }
 
+  .form__close:hover {
+    max-width: 40px;
+    max-height: 40px;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 40px;
+    opacity: 60%;
+  }
+
   .form__content {
     background-color: white;
     max-width: 430px;
@@ -119,6 +131,19 @@
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
+  }
+
+  .form__save-active {
+    background-color: #000000;
+    border-color: transparent;
+    color: #ffffff;
+  }
+
+  .form__save-active:hover {
+    background-color: #000000;
+    border-color: transparent;
+    color: #ffffff;
+    opacity: 80%;
   }
 }
 
