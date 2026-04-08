@@ -15,8 +15,9 @@
 }
 .footer__copyrigth {
   color: #545454;
-  width: 318px;
+  width: 282px;
   height: 18px;
+  margin: 0;
 
   font-family: "Inter";
   font-weight: 400;
