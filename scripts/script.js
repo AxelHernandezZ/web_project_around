@@ -10,6 +10,11 @@ let formSaveButton = document.querySelector(".form__save");
 let nameInput = document.querySelector(".form__name");
 let aboutInput = document.querySelector(".form__about");
 
+//Tarjeta icono corazon
+let cardLikeButtons = document.querySelectorAll(
+  ".elements__grid-card-footer-icon",
+);
+
 //Funcion para cerrar formulario y limpiar campos
 function formClose() {
   nameInput.value = "";
@@ -45,12 +50,32 @@ function saveForm() {
   }
 }
 
+//funcion para activar/desactivar boton like
+function toggleLike(cardLikeButton) {
+  if (
+    cardLikeButton.getAttribute("src") ===
+    "images/grid/grid_icons/btn_heart_icon_empty.png"
+  ) {
+    cardLikeButton.src = "images/grid/grid_icons/btn_heart_icon_active.png";
+    console.log("like activado");
+  } else {
+    cardLikeButton.src = "images/grid/grid_icons/btn_heart_icon_empty.png";
+    console.log("like desactivado");
+  }
+}
+
 //eventos
 editButton.addEventListener("click", formToggle);
 formCloseButton.addEventListener("click", formClose);
 nameInput.addEventListener("input", saveForm);
 aboutInput.addEventListener("input", saveForm);
 formSaveButton.addEventListener("click", EditProfile);
-
+cardLikeButtons.forEach((button) => {
+  button.addEventListener("click", function () {
+    toggleLike(button);
+  });
+});
 // cerrar al iniciar
 formClose();
+
+/////REVISAR EL PROBLEMA DE LOS CORAZONES Y ALINEAR EL FOOTER
