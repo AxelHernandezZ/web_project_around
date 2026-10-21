@@ -2,6 +2,8 @@
 let editButton = document.querySelector(".profile__info-editbutton-edit");
 //Perfil boton guardar
 let saveButton = document.querySelector(".form__save");
+//Perfil boton añadir imagen
+let addButton = document.querySelector(".profile__info-addbutton-add");
 //Formulario
 let form = document.querySelector(".form");
 let formCloseButton = document.querySelector(".form__close");
