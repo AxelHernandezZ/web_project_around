@@ -24,9 +24,21 @@ function formClose() {
   form.classList.remove("form--visible");
 }
 
+//Funcion para cerrar formulario de imagen y limpiar campos
+function formImgClose() {
+  nameInput.value = "";
+  aboutInput.value = "";
+  formImg.classList.remove("form--visible");
+}
+
 //funcion para mostrar formulario
 function formToggle() {
   form.classList.add("form--visible");
+}
+
+//funcion para mostrar formulario de imagen
+function formImgToggle() {
+  formImg.classList.add("formImg--visible");
 }
 
 //funcion para editar perfil y cerrar formulario
@@ -79,5 +91,3 @@ cardLikeButtons.forEach((button) => {
 });
 // cerrar al iniciar
 formClose();
-
-/////REVISAR EL PROBLEMA DE LOS CORAZONES Y ALINEAR EL FOOTER
