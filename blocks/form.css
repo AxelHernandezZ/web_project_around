@@ -1,5 +1,5 @@
 @media (min-width: 1440px) {
-  .formImg {
+  .form {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -12,13 +12,13 @@
     background-color: #00000050;
   }
 
-  .formImg--visible {
+  .form--visible {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
 
-  .formImg__body {
+  .form__body {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -28,7 +28,7 @@
     background-color: transparent;
   }
 
-  .formImg__body_type_edit {
+  .form__body_type_edit {
     max-width: 500px;
     max-height: 370px;
     height: 100%;
@@ -39,7 +39,7 @@
     align-items: flex-end;
   }
 
-  .formImg__close {
+  .form__close {
     max-width: 40px;
     max-height: 40px;
     background: none;
@@ -50,7 +50,7 @@
     font-size: 40px;
   }
 
-  .formImg__close:hover {
+  .form__close:hover {
     max-width: 40px;
     max-height: 40px;
     background: none;
@@ -62,7 +62,7 @@
     opacity: 60%;
   }
 
-  .formImg__content {
+  .form__content {
     background-color: white;
     max-width: 430px;
     max-height: 330px;
@@ -78,7 +78,7 @@
     border-radius: 10px;
   }
 
-  .formImg__title {
+  .form__title {
     width: 358px;
     height: 23px;
 
@@ -92,7 +92,7 @@
     margin: 34px auto 54px auto;
   }
 
-  .formImg__input {
+  .form__input {
     width: 358px;
     height: 27px;
 
@@ -106,15 +106,15 @@
     letter-spacing: 0%;
   }
 
-  .formImg__name {
+  .form__name {
     margin: 0 auto 30px auto;
   }
 
-  .formImg__about {
+  .form__about {
     margin: 0 auto 48px auto;
   }
 
-  .formImg__save {
+  .form__save {
     width: 358px;
     height: 50px;
 
@@ -132,13 +132,13 @@
     text-align: center;
   }
 
-  .formImg__save-active {
+  .form__save-active {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
   }
 
-  .formImg__save-active:hover {
+  .form__save-active:hover {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
@@ -147,7 +147,7 @@
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
-  .formImg {
+  .form {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -160,13 +160,13 @@
     background-color: #00000050;
   }
 
-  .formImg--visible {
+  .form--visible {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
 
-  .formImg__body {
+  .form__body {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -176,7 +176,7 @@
     background-color: transparent;
   }
 
-  .formImg__body_type_edit {
+  .form__body_type_edit {
     max-width: 500px;
     max-height: 370px;
     height: 100%;
@@ -187,7 +187,7 @@
     align-items: flex-end;
   }
 
-  .formImg__close {
+  .form__close {
     max-width: 40px;
     max-height: 40px;
     background: none;
@@ -198,7 +198,7 @@
     font-size: 40px;
   }
 
-  .formImg__content {
+  .form__content {
     background-color: white;
     max-width: 430px;
     max-height: 330px;
@@ -214,7 +214,7 @@
     border-radius: 10px;
   }
 
-  .formImg__title {
+  .form__title {
     width: 358px;
     height: 23px;
 
@@ -228,7 +228,7 @@
     margin: 34px auto 54px auto;
   }
 
-  .formImg__input {
+  .form__input {
     width: 358px;
     height: 27px;
 
@@ -242,15 +242,15 @@
     letter-spacing: 0%;
   }
 
-  .formImg__name {
+  .form__name {
     margin: 0 auto 30px auto;
   }
 
-  .formImg__about {
+  .form__about {
     margin: 0 auto 48px auto;
   }
 
-  .formImg__save {
+  .form__save {
     width: 358px;
     height: 50px;
 
@@ -268,13 +268,13 @@
     text-align: center;
   }
 
-  .formImg__save-active {
+  .form__save-active {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
   }
 
-  .formImg__save-active:hover {
+  .form__save-active:hover {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
@@ -283,7 +283,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-  .formImg {
+  .form {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -296,13 +296,13 @@
     background-color: #00000050;
   }
 
-  .formImg--visible {
+  .form--visible {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
 
-  .formImg__body {
+  .form__body {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -312,7 +312,7 @@
     background-color: transparent;
   }
 
-  .formImg__body_type_edit {
+  .form__body_type_edit {
     max-width: 500px;
     max-height: 370px;
     height: 100%;
@@ -323,7 +323,7 @@
     align-items: flex-end;
   }
 
-  .formImg__close {
+  .form__close {
     max-width: 40px;
     max-height: 40px;
     background: none;
@@ -334,7 +334,7 @@
     font-size: 40px;
   }
 
-  .formImg__content {
+  .form__content {
     background-color: white;
     max-width: 430px;
     max-height: 330px;
@@ -350,7 +350,7 @@
     border-radius: 10px;
   }
 
-  .formImg__title {
+  .form__title {
     width: 358px;
     height: 23px;
 
@@ -364,7 +364,7 @@
     margin: 34px auto 54px auto;
   }
 
-  .formImg__input {
+  .form__input {
     width: 358px;
     height: 27px;
 
@@ -378,15 +378,15 @@
     letter-spacing: 0%;
   }
 
-  .formImg__name {
+  .form__name {
     margin: 0 auto 30px auto;
   }
 
-  .formImg__about {
+  .form__about {
     margin: 0 auto 48px auto;
   }
 
-  .formImg__save {
+  .form__save {
     width: 358px;
     height: 50px;
 
@@ -404,13 +404,13 @@
     text-align: center;
   }
 
-  .formImg__save-active {
+  .form__save-active {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
   }
 
-  .formImg__save-active:hover {
+  .form__save-active:hover {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
@@ -419,7 +419,7 @@
 }
 
 @media (max-width: 767px) {
-  .formImg {
+  .form {
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -432,13 +432,13 @@
     background-color: #00000050;
   }
 
-  .formImg--visible {
+  .form--visible {
     visibility: visible;
     opacity: 1;
     pointer-events: auto;
   }
 
-  .formImg__body {
+  .form__body {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -448,7 +448,7 @@
     background-color: transparent;
   }
 
-  .formImg__body_type_edit {
+  .form__body_type_edit {
     max-width: 320px;
     max-height: 370px;
     height: 100%;
@@ -459,7 +459,7 @@
     align-items: flex-end;
   }
 
-  .formImg__close {
+  .form__close {
     max-width: 26px;
     max-height: 26px;
     background: none;
@@ -471,7 +471,7 @@
     margin: 0 18px 13px 0;
   }
 
-  .formImg__content {
+  .form__content {
     background-color: white;
     max-width: 282px;
     max-height: 322px;
@@ -487,7 +487,7 @@
     border-radius: 10px;
   }
 
-  .formImg__title {
+  .form__title {
     width: 238px;
     height: 22px;
 
@@ -501,7 +501,7 @@
     margin: 34px auto 54px auto;
   }
 
-  .formImg__input {
+  .form__input {
     width: 238px;
     height: 17px;
 
@@ -515,15 +515,15 @@
     letter-spacing: 0%;
   }
 
-  .formImg__name {
+  .form__name {
     margin: 0 auto 30px auto;
   }
 
-  .formImg__about {
+  .form__about {
     margin: 0 auto 48px auto;
   }
 
-  .formImg__save {
+  .form__save {
     width: 238px;
     height: 46px;
 
@@ -541,13 +541,13 @@
     text-align: center;
   }
 
-  .formImg__save-active {
+  .form__save-active {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
   }
 
-  .formImg__save-active:hover {
+  .form__save-active:hover {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;

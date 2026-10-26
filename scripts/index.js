@@ -4,10 +4,15 @@ let editButton = document.querySelector(".profile__info-editbutton-edit");
 let saveButton = document.querySelector(".form__save");
 //Perfil boton añadir imagen
 let addButton = document.querySelector(".profile__info-addbutton-add");
-//Formulario
+
+//Formulario editar perfil
 let form = document.querySelector(".form");
 let formCloseButton = document.querySelector(".form__close");
 let formSaveButton = document.querySelector(".form__save");
+//Formulario agregar imagen
+let formImg = document.querySelector(".formImg");
+let formImgCloseButton = document.querySelector(".formImg__close");
+
 //Entradas de formulario
 let nameInput = document.querySelector(".form__name");
 let aboutInput = document.querySelector(".form__about");
@@ -28,7 +33,7 @@ function formClose() {
 function formImgClose() {
   nameInput.value = "";
   aboutInput.value = "";
-  formImg.classList.remove("form--visible");
+  formImg.classList.remove("formImg--visible");
 }
 
 //funcion para mostrar formulario
@@ -54,7 +59,7 @@ function EditProfile() {
   formClose();
 }
 
-//funcion para activar boton guardar
+//formulario de perfil_funcion para activar boton guardar
 function saveForm() {
   if (nameInput.value.trim() !== "" && aboutInput.value.trim() !== "") {
     saveButton.classList.add("form__save-active");
@@ -78,16 +83,23 @@ function toggleLike(cardLikeButton) {
   }
 }
 
-//eventos
+//eventos para formulario de perfil
 editButton.addEventListener("click", formToggle);
 formCloseButton.addEventListener("click", formClose);
 nameInput.addEventListener("input", saveForm);
 aboutInput.addEventListener("input", saveForm);
 formSaveButton.addEventListener("click", EditProfile);
+
+//eventos para boton like de tarjeta
 cardLikeButtons.forEach((button) => {
   button.addEventListener("click", function () {
     toggleLike(button);
   });
 });
+
+//eventos de formulario de imagen
+addButton.addEventListener("click", formImgToggle);
+formImgCloseButton.addEventListener("click", formImgClose);
+
 // cerrar al iniciar
 formClose();
