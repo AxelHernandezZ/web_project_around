@@ -110,7 +110,7 @@
     margin: 0 auto 30px auto;
   }
 
-  .formImg__about {
+  .formImg__url {
     margin: 0 auto 48px auto;
   }
 
@@ -120,9 +120,9 @@
 
     margin: 0 auto 36px auto;
 
-    background-color: transparent;
-    border-color: #c4c4c4;
-    color: #c4c4c4;
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
 
     font-family: Inter;
     font-weight: 400;
@@ -132,13 +132,7 @@
     text-align: center;
   }
 
-  .formImg__save-active {
-    background-color: #000000;
-    border-color: transparent;
-    color: #ffffff;
-  }
-
-  .formImg__save-active:hover {
+  .formImg__save:hover {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
@@ -246,7 +240,7 @@
     margin: 0 auto 30px auto;
   }
 
-  .formImg__about {
+  .formImg__url {
     margin: 0 auto 48px auto;
   }
 
@@ -256,9 +250,9 @@
 
     margin: 0 auto 36px auto;
 
-    background-color: transparent;
-    border-color: #c4c4c4;
-    color: #c4c4c4;
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
 
     font-family: Inter;
     font-weight: 400;
@@ -268,13 +262,7 @@
     text-align: center;
   }
 
-  .formImg__save-active {
-    background-color: #000000;
-    border-color: transparent;
-    color: #ffffff;
-  }
-
-  .formImg__save-active:hover {
+  .formImg__save:hover {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;
@@ -382,7 +370,7 @@
     margin: 0 auto 30px auto;
   }
 
-  .formImg__about {
+  .formImg__url {
     margin: 0 auto 48px auto;
   }
 
@@ -402,12 +390,6 @@
     line-height: 100%;
     letter-spacing: 0%;
     text-align: center;
-  }
-
-  .formImg__save-active {
-    background-color: #000000;
-    border-color: transparent;
-    color: #ffffff;
   }
 
   .formImg__save:hover {
@@ -519,7 +501,7 @@
     margin: 0 auto 30px auto;
   }
 
-  .formImg__about {
+  .formImg__url {
     margin: 0 auto 48px auto;
   }
 
@@ -529,9 +511,9 @@
 
     margin: 0 auto 36px auto;
 
-    background-color: transparent;
-    border-color: #c4c4c4;
-    color: #c4c4c4;
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
 
     font-family: Inter;
     font-weight: 400;
@@ -541,13 +523,7 @@
     text-align: center;
   }
 
-  .formImg__save-active {
-    background-color: #000000;
-    border-color: transparent;
-    color: #ffffff;
-  }
-
-  .formImg__save-active:hover {
+  .formImg__save:hover {
     background-color: #000000;
     border-color: transparent;
     color: #ffffff;

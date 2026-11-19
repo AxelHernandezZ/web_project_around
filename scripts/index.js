@@ -5,6 +5,9 @@ let saveButton = document.querySelector(".form__save");
 //Perfil boton añadir imagen
 let addButton = document.querySelector(".profile__info-addbutton-add");
 
+//Posicion de las tarjetas
+let imgContainer = document.querySelector(".elements__grid");
+
 //Formulario editar perfil
 let form = document.querySelector(".form");
 let formCloseButton = document.querySelector(".form__close");
@@ -12,6 +15,9 @@ let formSaveButton = document.querySelector(".form__save");
 //Formulario agregar imagen
 let formImg = document.querySelector(".formImg");
 let formImgCloseButton = document.querySelector(".formImg__close");
+let formImgSaveButton = document.querySelector(".formImg__save");
+let titleInput = document.querySelector(".formImg__name");
+let urlImage = document.querySelector(".formImg__url");
 
 //Entradas de formulario
 let nameInput = document.querySelector(".form__name");
@@ -31,8 +37,8 @@ function formClose() {
 
 //Funcion para cerrar formulario de imagen y limpiar campos
 function formImgClose() {
-  nameInput.value = "";
-  aboutInput.value = "";
+  titleInput.value = "";
+  urlImage.value = "";
   formImg.classList.remove("formImg--visible");
 }
 
@@ -43,7 +49,24 @@ function formToggle() {
 
 //funcion para mostrar formulario de imagen
 function formImgToggle() {
+  console.log("se abre para guardar");
   formImg.classList.add("formImg--visible");
+}
+
+function addImage(title, url) {
+  //Se establece el uso de la plantilla
+  const imgTemplate = document.querySelector("#card-template");
+  const imgElement = imgTemplate.content
+    .querySelector(".elements__grid-card")
+    .cloneNode(true);
+  //Se agregan los valores obtenidos del form a la plantilla
+  imgElement.querySelector(".elements__grid-card-footer-text").textContent =
+    title;
+  imgElement.querySelector(".elements__grid-card-image").src = url;
+
+  //Se carga la plantilla dentro de la visualización
+  imgContainer.prepend(imgElement);
+  formImgClose();
 }
 
 //funcion para editar perfil y cerrar formulario
@@ -68,6 +91,8 @@ function saveForm() {
     return;
   }
 }
+
+//Guardar datos del formulario de la imagen
 
 //funcion para activar/desactivar boton like
 function toggleLike(cardLikeButton) {
@@ -100,6 +125,12 @@ cardLikeButtons.forEach((button) => {
 //eventos de formulario de imagen
 addButton.addEventListener("click", formImgToggle);
 formImgCloseButton.addEventListener("click", formImgClose);
+formImgSaveButton.addEventListener("click", function () {
+  console.log("boton save activado");
+  const imgTitle = document.querySelector(".formImg__name");
+  const imgUrl = document.querySelector(".formImg__url");
+  addImage(imgTitle.value, imgUrl.value);
+});
 
 // cerrar al iniciar
 formClose();

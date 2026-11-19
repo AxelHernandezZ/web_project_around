@@ -218,13 +218,35 @@
           />
           <input
             type="text"
-            class="formImg__input formImg__about"
+            class="formImg__input formImg__url formImg__about"
             placeholder="Enlace a la imagen"
           />
           <button class="formImg__save">Crear</button>
         </div>
       </div>
     </div>
+
+    <template id="card-template">
+      <figure class="elements__grid-card">
+        <div class="elements__grid-card-header">
+          <img
+            class="elements__grid-card-image"
+            src="images/grid/grid_images/grid-img-2.jpg"
+            alt="imagen1"
+          />
+        </div>
+
+        <div class="elements__grid-card-footer">
+          <p class="elements__grid-card-footer-text"></p>
+          <img
+            class="elements__grid-card-footer-icon"
+            src="images/grid/grid_icons/btn_heart_icon_empty.png"
+            alt="heart empty"
+          />
+        </div>
+      </figure>
+    </template>
+
     <script src="scripts/index.js"></script>
   </body>
 </html>
