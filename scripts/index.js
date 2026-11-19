@@ -23,10 +23,12 @@ let urlImage = document.querySelector(".formImg__url");
 let nameInput = document.querySelector(".form__name");
 let aboutInput = document.querySelector(".form__about");
 
+/*
 //Tarjeta icono corazon
 let cardLikeButtons = document.querySelectorAll(
   ".elements__grid-card-footer-icon",
 );
+*/
 
 //Funcion para cerrar formulario y limpiar campos
 function formClose() {
@@ -115,11 +117,19 @@ nameInput.addEventListener("input", saveForm);
 aboutInput.addEventListener("input", saveForm);
 formSaveButton.addEventListener("click", EditProfile);
 
+/*
 //eventos para boton like de tarjeta
 cardLikeButtons.forEach((button) => {
   button.addEventListener("click", function () {
     toggleLike(button);
   });
+});
+*/
+//Evento para el boton like - Dinamico. / Lee el evento y lo compara con lo requerido para realizar la accion
+imgContainer.addEventListener("click", function (evt) {
+  if (evt.target.classList.contains("elements__grid-card-footer-icon")) {
+    toggleLike(evt.target);
+  }
 });
 
 //eventos de formulario de imagen
